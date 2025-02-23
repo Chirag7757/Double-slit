@@ -1,6 +1,5 @@
 import streamlit as st 
 import numpy as np 
-import math
 import matplotlib.pyplot as plt 
 
 st.title("Double Slit Experiment")
