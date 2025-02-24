@@ -1,9 +1,6 @@
 import streamlit as st 
 import numpy as np 
-import matplotlib
-matplotlib.use("Agg") 
-from matplotlib.backends.backend_agg import RendererAgg
-_lock = RendererAgg.lock
+import matplotlib.pyplot as plt
 
 st.title("Double Slit Experiment Simulator")
 col1,col2=st.columns(2)
@@ -24,13 +21,12 @@ psi22=psi2**2
 psi3=2*np.sqrt(d3/(lamb*L))*np.sinc(np.pi*d3*x/(lamb*L))
 y=abs(psi12+psi22+psi3)
 
-with _lock:
-    fig, ax = plt.subplots()
-    ax.plot(x, y, label="Interference Pattern")
-    ax.set_xlabel("Screen Position (m)")
-    ax.set_ylabel("Intensity")
-    ax.set_title("Double Slit Interference Pattern")
-    ax.legend()
-    ax.grid()
-    with col2:
-        st.pyplot(fig)
+fig, ax = plt.subplots()
+ax.plot(x, y, label="Interference Pattern")
+ax.set_xlabel("Screen Position (m)")
+ax.set_ylabel("Intensity")
+ax.set_title("Double Slit Interference Pattern")
+ax.legend()
+ax.grid()
+with col2:
+    st.pyplot(fig) 
