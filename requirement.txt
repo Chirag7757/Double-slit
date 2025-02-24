@@ -1,4 +1,4 @@
-streamlit
-matplotlib
-numpy
+streamlit 1.42.2
+matplotlib 3.10.0
+numpy 2.2.3
 
