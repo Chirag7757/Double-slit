@@ -1,5 +1,7 @@
 import streamlit as st 
 import numpy as np 
+import matplotlib
+matplotlib.use("Agg") 
 from matplotlib.backends.backend_agg import RendererAgg
 _lock = RendererAgg.lock
 
