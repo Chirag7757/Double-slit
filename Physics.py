@@ -7,6 +7,11 @@ import matplotlib.pyplot as plt
 
 st.title("Double Slit Experiment Simulator")
 col1,col2=st.columns(2)
+d1= 0.0003
+d3= 0.0003
+L=2
+x=np.linspace(-L,L,50)
+lamb=0.00006
 
 with col1:
     d1= (st.slider("slit 1 and 2 width in cm", 0.01,0.1))/100
