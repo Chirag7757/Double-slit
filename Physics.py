@@ -46,7 +46,7 @@ x1 = np.random.choice(x, size=N, p=y2)
 y3 = np.random.rand(N) * np.max(y)
 
 fig, ax = plt.subplots()
-ax.scatter(x1,y3 label="Interference Pattern")
+ax.scatter(x1,y3,label="Interference Pattern")
 ax.set_xlabel("Screen Position (m)")
 ax.set_ylabel("Intensity")
 ax.set_title("Double Slit Interference Pattern")
