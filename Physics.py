@@ -32,7 +32,7 @@ with col1:
     if st.button("+1"):
                  n+=1
     
-N=n1+n=n2+n_1+n_0+n_2
+N=n1+n+n2+n_1+n_0+n_2
 
 psi1=np.sqrt(d1/(lamb*L))*np.sinc(np.pi*d1*x/(lamb*L))
 psi12=psi1**2
