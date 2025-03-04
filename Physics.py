@@ -30,7 +30,7 @@ psi3=2*np.sqrt(d3/(lamb*L))*np.sinc(np.pi*d3*x/(lamb*L))
 y=abs(psi12+psi22+psi3)
 
 fig, ax = plt.subplots()
-ax.plot(x, y, label="Interference Pattern")
+ax.scatter(x, y, label="Interference Pattern")
 ax.set_xlabel("Screen Position (m)")
 ax.set_ylabel("Intensity")
 ax.set_title("Double Slit Interference Pattern")
