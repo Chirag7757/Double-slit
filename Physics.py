@@ -12,7 +12,7 @@ x=np.linspace(-0.25,0.25,1000)
 lamb=0.00006
 list=[]
 
-N=st.number_input("Enter no of photon particles",min_value=1,max_value=1000)
+N=st.number_input("Enter no of photon particles",min_value=1,max_value=10000)
     
 
 psi1=np.sqrt(d1/(lamb*L))*np.sinc(np.pi*d1*x/(lamb*L))
