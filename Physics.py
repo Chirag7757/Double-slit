@@ -23,7 +23,7 @@ with col1:
     if st.button("-1"):
                  N-=1
     if st.button("+100"):
-                 n1+=100
+                 N+=100
     if st.button("+10"):
                  N+=10
     if st.button("+1"):
