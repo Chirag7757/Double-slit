@@ -2,12 +2,7 @@ import streamlit as st
 import numpy as np 
 import subprocess
 import sys
-
-try:
-    import matplotlib.pyplot as plt
-except ModuleNotFoundError:
-    subprocess.run([sys.executable, "-m", "pip", "install", "matplotlib"])
-    import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 
 st.title("Double Slit Experiment Simulator")
