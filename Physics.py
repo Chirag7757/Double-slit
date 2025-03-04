@@ -11,23 +11,9 @@ L=2
 x=np.linspace(-L,L,10000)
 lamb=0.00006
 list=[]
-N=0
 
 with col1:
-    if st.button("Clear"):
-                 N*=0
-    if st.button("-100"):
-                 N-=100
-    if st.button("-10"):
-                 N-=10
-    if st.button("-1"):
-                 N-=1
-    if st.button("+100"):
-                 N+=100
-    if st.button("+10"):
-                 N+=10
-    if st.button("+1"):
-                 N=1
+    N=st.number_input("Enter no of photon particles",min_value=1,max_value=100000)
     
 
 psi1=np.sqrt(d1/(lamb*L))*np.sinc(np.pi*d1*x/(lamb*L))
