@@ -27,4 +27,10 @@ y2=y/np.sum(y)
 x1 = np.random.choice(x, size=N, p=y2)
 y3 = np.random.rand(N) * np.max(y)
 
-st.scatter_chart(data=None, x=x1, y=y3)
+
+a=plt.scatter(x1, y3, s=10, alpha=0.5, label="Sampled Points")
+b=plt.plot(x, y / np.max(y) * np.max(y3), 'r-', label="Target PDF (Scaled)")
+plt.show()
+with col2:
+    st.pyplot(a)
+    st.pyplot(b)
