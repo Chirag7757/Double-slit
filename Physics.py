@@ -11,28 +11,24 @@ L=2
 x=np.linspace(-L,L,10000)
 lamb=0.00006
 list=[]
-n=0
-n1=0
-n2=0
-n_0=0
-n_1=0
-n_2=0
+N=0
 
 with col1:
+    if st.button("Clear"):
+                 N*=0
     if st.button("-100"):
-                 n_2-=100
+                 N-=100
     if st.button("-10"):
-                 n_1-=10
+                 N-=10
     if st.button("-1"):
-                 n_0-=1
+                 N-=1
     if st.button("+100"):
                  n1+=100
     if st.button("+10"):
-                 n2+=10
+                 N+=10
     if st.button("+1"):
-                 n+=1
+                 N=1
     
-N=n1+n+n2+n_1+n_0+n_2
 
 psi1=np.sqrt(d1/(lamb*L))*np.sinc(np.pi*d1*x/(lamb*L))
 psi12=psi1**2
