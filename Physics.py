@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 
 st.title("Double Slit Experiment Simulator")
-col1,col2=st.columns(2)
+
 d1= 0.0003
 d3= 0.0003
 L=2
@@ -12,8 +12,7 @@ x=np.linspace(-0.25,0.25,1000)
 lamb=0.00006
 list=[]
 
-with col1:
-    N=st.number_input("Enter no of photon particles",min_value=1,max_value=1000)
+N=st.number_input("Enter no of photon particles",min_value=1,max_value=1000)
     
 
 psi1=np.sqrt(d1/(lamb*L))*np.sinc(np.pi*d1*x/(lamb*L))
@@ -33,5 +32,4 @@ ax.plot(x, y / np.max(y) * np.max(y3), 'r-', label="Interference Pattern")
 ax.set_xlabel("Screen Position (x)")
 ax.set_ylabel("Intensity")
 ax.legend()
-with col2:
-    st.pyplot(fig)
+st.pyplot(fig)
