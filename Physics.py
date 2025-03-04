@@ -19,17 +19,17 @@ n_1=0
 n_2=0
 
 with col1:
-    if st.button("-100):
+    if st.button("-100"):
                  n_2-=100
-    if st.button("-10):
+    if st.button("-10"):
                  n_1-=10
-    if st.button("-1):
+    if st.button("-1"):
                  n_0-=1
-    if st.button("+100):
+    if st.button("+100"):
                  n1+=100
-    if st.button("+10):
+    if st.button("+10"):
                  n2+=10
-    if st.button("+1):
+    if st.button("+1"):
                  n+=1
     
 N=n1+n=n2+n_1+n_0+n_2
