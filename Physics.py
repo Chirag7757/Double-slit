@@ -27,12 +27,4 @@ y2=y/np.sum(y)
 x1 = np.random.choice(x, size=N, p=y2)
 y3 = np.random.rand(N) * np.max(y)
 
-fig, ax = plt.subplots()
-ax.scatter(x1,y3,label="Interference Pattern")
-ax.set_xlabel("Screen Position (m)")
-ax.set_ylabel("Intensity")
-ax.set_title("Double Slit Interference Pattern")
-ax.legend()
-ax.grid()
-with col2:
-    st.pyplot(fig) 
+st.scatter_chart(data=None, x=x1, y=y3)
