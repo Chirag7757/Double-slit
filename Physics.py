@@ -27,7 +27,7 @@ fig, ax = plt.subplots(figsize=(8, 4))
 
   
 ax.plot(x, y / np.max(y) * np.max(y3), 'r-')
-
+ax.scatter(x1, y3, s=10, alpha=0.5)
 ax.set_xlabel("Screen Position (x)")
 ax.set_ylabel("Intensity")
 ax.legend()
