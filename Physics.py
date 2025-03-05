@@ -42,8 +42,10 @@ x_m4 = 0.13
 
 count = np.sum((x1 >= x_m1) & (x1 <= x_m2))
 count1 = np.sum((x1 >= x_m4) & (x1 <= x_m3))
-st.text(f'Lhs population {count}')
-st.text(f'rhs population {count1}')
+if count1>count:
+  st.text('0')
+else :
+  st.text('1')
 
 
 
