@@ -33,3 +33,17 @@ ax.set_xlabel("Screen Position (x)")
 ax.set_ylabel("Intensity")
 ax.legend()
 st.pyplot(fig)
+
+
+x_m1 = -0.27
+x_m2 = -0.13
+x_m3 = 0.27
+x_m4 = 0.13
+
+count = np.sum((x1 >= x_m1) & (x1 <= x_m2))
+count1 = np.sum((x1 >= x_m4) & (x1 <= x_m3))
+st.text(f'Lhs population {count}')
+st.text(f'rhs population {count1}')
+
+
+
