@@ -24,7 +24,9 @@ y2=y/np.sum(y)
 x1 = np.random.choice(x, size=N, p=y2)
 y3 = np.random.rand(N) * np.max(y)
 fig, ax = plt.subplots(figsize=(8, 4))
-ax.scatter(x1, y3, s=10, alpha=0.5)
+if st.button("Re run"):
+  ax.scatter(x1, y3, s=10, alpha=0.5)
+  
 ax.plot(x, y / np.max(y) * np.max(y3), 'r-')
 
 ax.set_xlabel("Screen Position (x)")
