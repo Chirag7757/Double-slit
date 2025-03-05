@@ -24,8 +24,7 @@ y2=y/np.sum(y)
 x1 = np.random.choice(x, size=N, p=y2)
 y3 = np.random.rand(N) * np.max(y)
 fig, ax = plt.subplots(figsize=(8, 4))
-if st.button("Re run"):
-  ax.scatter(x1, y3, s=10, alpha=0.5)
+
   
 ax.plot(x, y / np.max(y) * np.max(y3), 'r-')
 
@@ -39,7 +38,9 @@ x_m1 = -0.27
 x_m2 = -0.13
 x_m3 = 0.27
 x_m4 = 0.13
-
+if st.button("Re run"):
+  ax.scatter(x1, y3, s=10, alpha=0.5)
+  
 count = np.sum((x1 >= x_m1) & (x1 <= x_m2))
 count1 = np.sum((x1 >= x_m4) & (x1 <= x_m3))
 if count1>count:
