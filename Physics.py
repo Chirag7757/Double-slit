@@ -7,7 +7,7 @@ st.title("Double Slit Experiment Simulator")
 
 d1= 0.0003
 d3= 0.0003
-L=0.02
+L=2
 x=np.linspace(-0.25,0.25,1000)
 lamb=0.00006
 list=[]
